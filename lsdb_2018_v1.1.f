@@ -390,9 +390,9 @@ c prints out program header
      *and USA',/,
      *1x,71('=')/
      *' Written by Dr. A. Volkov w/contrib. from M. Messerschmidt &',/,
-     *' K.N. Jarzembska, Prashant Kumar, P.M. Dominiak',/,
+     *' K.N. Jarzembska, P.M. Dominiak, P. Kumar',/,
      *' Copyright (c) 2006, A. Volkov',12x,
-     *'Last modified on February 2018',/,1x,71('='))
+     *'Last modified on October 2018',/,1x,71('='))
       return
       end
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
@@ -7529,7 +7529,7 @@ c
             group(k) = 'THIO'
             return
 cPK 13_02_2018 
-            else if( nnei(iat).eq.4 ) then
+        else if( nnei(iat).eq.4 ) then
             group(k) = 'SX4'
             return
             else if( nnei(iat).eq.2) then
@@ -7728,8 +7728,6 @@ cPMD  nsp2(3)-=C(c/h)=-c
       if( lcyc .and. lPG .and. (iCr.eq.iNr) .and. nnei(iN).eq.3 ) then
         do j=1,nnei(iN)
           jat = jnei(iN,j)
-cPMD_PK Check if delete 7728 will help to recognize N=N in a ring (also
-c verify this in re-avging)
           if( itype(jat).ne.1 .and. itype(jat).ne.6 ) goto 6039 
         enddo
         group(k) = 'substituted nitrogen'
@@ -8531,6 +8529,13 @@ cKNJ
      *    janei(iN,1).eq.6 .and. jnnei(iN,1).eq.1 .and.
      *    janei(iN,2).eq.8 .and. jnnei(iN,2).eq.2 ) then
         group(k) = 'NO2'
+        return
+      endif
+cPK      
+      if( nnei(iN).eq.3 .and. 
+     *    janei(iN,1).eq.7 .and. jnnei(iN,1).eq.1 .and.
+     *    janei(iN,2).eq.8 .and. jnnei(iN,2).eq.2 ) then
+        group(k) = 'NO2N'
         return
       endif
 cKNJ
