@@ -8534,7 +8534,7 @@ cKNJ
         group(k) = 'NO2'
         return
       endif
-cPK      
+cPK NO2N Exception
       if( nnei(iN).eq.3 .and. 
      *    janei(iN,1).eq.7 .and. jnnei(iN,1).eq.1 .and.
      *    janei(iN,2).eq.8 .and. jnnei(iN,2).eq.2 ) then
