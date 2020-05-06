@@ -335,6 +335,7 @@ c         subroutine for O merged with subroutine for C
 c         new subroutine is called "DefLoc"
 c 011602: also figures out the kappa sets and chemical constraints
 c
+c 040520: Fixing PLM (3,-3) & (4,-3) mopro par file
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 c TODO: 
