@@ -928,12 +928,12 @@ ccccomment
           write(444,'(2x,7(f5.3,2x))')         
      *      Plm(k,3,0)/occ(k),Plm(k,3,1)/occ(k),Plm(k,3,-1)/occ(k),
      *      Plm(k,3,2)/occ(k),Plm(k,3,-2)/occ(k),
-cPK  PLM 3 -3 sign changed (multiplied with -1) Christain/Paulin 03May2020
+cPK  PLM 3 -3 sign changed (multiplied with -1) Christain/PMD 03May2020
      *      Plm(k,3,3)/occ(k),(Plm(k,3,-3)/occ(k))*-1
           write(444,'(2x,9(f5.3,2x))')
      *      Plm(k,4,0)/occ(k),Plm(k,4,1)/occ(k),Plm(k,4,-1)/occ(k),
      *      Plm(k,4,2)/occ(k),Plm(k,4,-2)/occ(k),Plm(k,4,3)/occ(k),
-cPK  PLM 4 -3 sign changed (multiplied with -1) Christain/Paulin 03May2020
+cPK  PLM 4 -3 sign changed (multiplied with -1) Christain/PMD 03May2020
      *      (Plm(k,4,-3)/occ(k))*-1,Plm(k,4,4)/occ(k),
      *      Plm(k,4,-4)/occ(k) 
           write(444,'(A)') ''  
