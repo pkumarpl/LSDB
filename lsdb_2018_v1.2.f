@@ -902,7 +902,7 @@ ccccomment
      *    RESI1(k,1),(xf(k,j),j=1,3), occ(k), ' 1 ',atom2 
           else
           write(444,'(A,I3,1X,A,A,3F12.6,F6.3,1X,A,A)') 'ATOM ',k, 
-     *    atom1,'1   MOL',(xf(k,j),j=1,3), occ(k), ' 1 ',atom2 
+     *    atom1,'MOL   1',(xf(k,j),j=1,3), occ(k), ' 1 ',atom2 
           endif     
           write(444,99) MOPRO(k,1)        
           aa1=atom(k)
